@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0,.95,999)
+r = .9*x
 
-fig = plt.figure(figsize=(5.25, 0.75))
-fig.text(0.5, 0.3, r'\dfrac: $\dfrac{a}{b}$',
-         horizontalalignment='center', verticalalignment='center')
-fig.text(0.5, 0.7, r'\frac: $\frac{a}{b}$',
-         horizontalalignment='center', verticalalignment='center')
+
+plt.plot(x,r)
 plt.show()
