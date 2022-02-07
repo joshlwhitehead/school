@@ -1,6 +1,7 @@
 
 wage = 25
-yearCurrent = 25000
+
+yearCurrent = 20000
 semCurrent = wage*15*4*4
 gradLongMonths = 44
 semLate = wage*40*4*4
