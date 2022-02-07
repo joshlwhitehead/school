@@ -1,5 +1,5 @@
 
-wage = 23
+wage = 25
 yearCurrent = 25000
 semCurrent = wage*15*4*4
 gradLongMonths = 44
@@ -13,5 +13,5 @@ def current_2026():
 def lateGrad():
     return 3*lateGradSal + 2*semLate + .5*estGradSal
 
-print(lateGrad()-current_2026())
-print(wage*40*4*12)
+print('full vs part: ',lateGrad()-current_2026())
+print('yearly wage: ',wage*40*4*12)
