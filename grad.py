@@ -1,18 +1,17 @@
-
 wage = 25
 
 yearCurrent = 20000
 semCurrent = wage*15*4*4
 gradLongMonths = 44
 semLate = wage*40*4*4
-lateGradSal = wage*40*4*12
+lateGradYear = wage*40*4*12
 estGradSal = 70000
 
-def current_lateGrad():
-    return yearCurrent + 2*semCurrent + 2.5*estGradSal
+def current_lateGrad(timeAfter,fullYearBefore,semesterCount):
+    return fullYearBefore*yearCurrent + semesterCount*semCurrent + timeAfter*estGradSal
 
-def lateGrad():
-    return 3*lateGradSal + 2*semLate + .5*estGradSal
+def lateGrad(timeAfter,fullYearBefore,semesterCount):
+    return fullYearBefore*lateGradYear + semesterCount*semLate + timeAfter*estGradSal
 
-print('full vs part: ',lateGrad()-current_lateGrad())
-print('yearly wage: ',wage*40*4*12)
+print('\nyou will have',lateGrad(1,3,1)-current_lateGrad(2.5,1,2),'more dollars \n')
+# print('yearly wage: ',wage*40*4*12)
