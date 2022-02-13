@@ -13,5 +13,5 @@ def current_lateGrad(timeAfter,fullYearBefore,semesterCount):
 def lateGrad(timeAfter,fullYearBefore,semesterCount):
     return fullYearBefore*lateGradYear + semesterCount*semLate + timeAfter*estGradSal
 
-print('\nyou will have',lateGrad(1,3,1)-current_lateGrad(2.5,1,2),'more dollars \n')
+print('\nyou will have',lateGrad(.5,3,2)-current_lateGrad(2.5,1,2),'more dollars \n')
 # print('yearly wage: ',wage*40*4*12)
